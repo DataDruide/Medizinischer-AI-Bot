@@ -1,0 +1,47 @@
+name: medizinischer_ai_bot
+description: "Minimalistischer Gesundheits-Chat mit Spracheingabe und openFDA-Suche."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.3
+
+dependencies:
+  cryptography: ^2.9.0
+  flutter:
+    sdk: flutter
+  flutter_dotenv: ^6.0.1
+  http: ^1.6.0
+  provider: ^6.1.5+1
+  shared_preferences: ^2.5.6
+  speech_to_text: ^7.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_native_splash: ^2.4.7
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - assets/fonts/OFL.txt
+  fonts:
+    - family: NunitoSans
+      fonts:
+        - asset: assets/fonts/NunitoSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/NunitoSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/NunitoSans-Bold.ttf
+          weight: 700
+
+flutter_native_splash:
+  color: "#FBF8FB"
+  image: assets/brand/medi_splash.png
+  fullscreen: false
+  android_12:
+    color: "#FBF8FB"
+    image: assets/brand/medi_splash.png
+    icon_background_color: "#FBF8FB"
